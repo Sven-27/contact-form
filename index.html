@@ -1,42 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link href="./styles.css" rel="stylesheet" type="text/css" />
-  <title>Contact form</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+    <title>Contact form</title>
+  </head>
+  <body>
+    <forn>
+      <h1>Contact Us</h1>
+      <div>
+        <label for="firstname">First Name <span>*</span></label>
+        <input
+          id="firstname"
+          type="text"
+          name="firstname"
+          class="personal-info"
+          aria-describedby="firstname-error"
+          required
+          aria-required="true"
+        />
+        <span id="firstname-error" class="error">This field is required</span>
+      </div>
+      <div>
+        <label for="lastname">Last Name <span>*</span></label>
+        <input
+          id="lastname"
+          type="text"
+          name="lastname"
+          class="personal-info"
+          aria-describedby="lastname-error"
+          required
+          aria-required="true"
+        />
+        <span id="lastname-error" class="ërror">This field is required</span>
+      </div>
+      <div>
+        <label for="email">Email Address <span>*</span></label>
+        <input
+          id="email"
+          type="text"
+          name="email"
+          class="personal-info"
+          aria-describedby="email-error"
+          required
+          aria-required="true"
+        />
+        <span id="email-error" class="ërror"
+          >Please enter a valid email address</span
+        >
+      </div>
+      <fieldset>
+        <legend>Query Type <span>*</span></legend>
+        <div>
+          <input
+            id="general"
+            type="radio"
+            name="general"
+            value="General Enquiry"
+            checked
+            aria-describedby="query-error"
+          />
+          <label for="general">General Enquiry</label>
+        </div>
+        <div>
+          <input
+            id="support"
+            type="radio"
+            name="support"
+            value="Support Request"
+            aria-describedby="query-error"
+          />
+          <label for="support">Support Request</label>
+        </div>
+      </fieldset>
+    </forn>
 
-  Contact Us
-
-  First Name
-  This field is required
-
-  Last Name
-  This field is required
-
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-
-</body>
+    Please select a query type Message This
+    field is required I consent to being contacted by the team To submit this
+    form, please consent to being contacted Submit Message Sent! Thanks for
+    completing the form. We'll be in touch soon!
+  </body>
 </html>

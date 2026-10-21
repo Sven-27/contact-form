@@ -38,6 +38,11 @@ body{
   justify-content: center;
   align-items: center;
   font-family: var(--karla);
+  background: var(--green-200);
+
+  fieldset{
+    border: none;
+  }
 }
 
 /* typography classes */
