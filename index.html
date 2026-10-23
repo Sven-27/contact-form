@@ -15,6 +15,7 @@
     <title>Contact form</title>
   </head>
   <body>
+    <p> Message Sent! Thanks for completing the form. We'll be in touch soon!</p>
     <forn>
       <h1>Contact Us</h1>
       <div>
@@ -28,7 +29,7 @@
           required
           aria-required="true"
         />
-        <span id="firstname-error" class="error">This field is required</span>
+        <p id="firstname-error" class="error">This field is required</p>
       </div>
       <div>
         <label for="lastname">Last Name <span>*</span></label>
@@ -41,7 +42,7 @@
           required
           aria-required="true"
         />
-        <span id="lastname-error" class="ërror">This field is required</span>
+        <p id="lastname-error" class="error">This field is required</p>
       </div>
       <div>
         <label for="email">Email Address <span>*</span></label>
@@ -54,9 +55,7 @@
           required
           aria-required="true"
         />
-        <span id="email-error" class="ërror"
-          >Please enter a valid email address</span
-        >
+        <p id="email-error" class="error">Please enter a valid email address</p>
       </div>
       <fieldset>
         <legend>Query Type <span>*</span></legend>
@@ -81,12 +80,28 @@
           />
           <label for="support">Support Request</label>
         </div>
+        <p id="query-error" class="error">Please select a query type Message</p>
       </fieldset>
+      <div>
+        <label for="message">Message <span>*</span></label>
+        <textarea 
+          id="message"
+          name="message"
+          aria-describedby="message-error"
+        ></textarea>
+        <p id="message-error" class="error">This field is required</p>
+      </div>
+      <div>
+        <input 
+          type="checkbox" 
+          id="accept" 
+          name="accept" 
+          aria-describedby="accept-error"
+        />
+        <label for="accept">I consent to being contacted by the team <span>*</span></label>
+        <p id="accept-error" class="error">To submit this form, please consent to being contacted</p>
+      </div>
+      <button type="submit">Submit</button>
     </forn>
-
-    Please select a query type Message This
-    field is required I consent to being contacted by the team To submit this
-    form, please consent to being contacted Submit Message Sent! Thanks for
-    completing the form. We'll be in touch soon!
   </body>
 </html>
