@@ -15,51 +15,75 @@
     <title>Contact form</title>
   </head>
   <body>
-    <p> Message Sent! Thanks for completing the form. We'll be in touch soon!</p>
-    <forn>
-      <h1>Contact Us</h1>
-      <div>
-        <label for="firstname">First Name <span>*</span></label>
+    <div class="submit-message">
+      <span class="text-preset-2">
+        <img src="./assets/images/icon-success-check.svg" alt="ïcon for a succes check" />  
+        Message Sent!
+      </span>
+      <p class="text-preset-4">Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    <form>
+      <h1 class="text-preset-1">Contact Us</h1>
+      <div class="input-fields">
+        <label
+           for="firstname"
+           class="text-preset-4"
+        >
+          First Name 
+          <span>*</span>  
+        </label>
         <input
           id="firstname"
           type="text"
           name="firstname"
-          class="personal-info"
+          class="personal-info text-preset-3"
           aria-describedby="firstname-error"
           required
           aria-required="true"
         />
-        <p id="firstname-error" class="error">This field is required</p>
+      <p id="firstname-error" class="error text-preset-4">This field is required</p>
       </div>
-      <div>
-        <label for="lastname">Last Name <span>*</span></label>
+      <div class="input-fields">
+        <label 
+          for="lastname"
+          class="text-preset-4"
+        >
+          Last Name 
+          <span>*</span>
+        </label>
         <input
           id="lastname"
           type="text"
           name="lastname"
-          class="personal-info"
+          class="personal-info text-preset-3"
           aria-describedby="lastname-error"
           required
           aria-required="true"
         />
-        <p id="lastname-error" class="error">This field is required</p>
+        <p id="lastname-error" class="error text-preset-4">This field is required</p>
       </div>
-      <div>
-        <label for="email">Email Address <span>*</span></label>
+      <div class="input-fields">
+        <label 
+          for="email"
+          class="text-preset-4"
+        >
+          Email Address 
+         <span>*</span>
+        </label>
         <input
           id="email"
           type="text"
           name="email"
-          class="personal-info"
+          class="personal-info text-preset-3"
           aria-describedby="email-error"
           required
           aria-required="true"
         />
-        <p id="email-error" class="error">Please enter a valid email address</p>
+        <p id="email-error" class="error text-preset-4">Please enter a valid email address</p>
       </div>
-      <fieldset>
-        <legend>Query Type <span>*</span></legend>
-        <div>
+      <fieldset class="input-fields choice-container">
+        <legend class="text-preset-4">Query Type <span>*</span></legend>
+        <div class="choice">
           <input
             id="general"
             type="radio"
@@ -68,9 +92,14 @@
             checked
             aria-describedby="query-error"
           />
-          <label for="general">General Enquiry</label>
+          <label 
+            for="general"
+            class="text-preset-3"
+          >
+            General Enquiry
+          </label>
         </div>
-        <div>
+        <div class="choice">
           <input
             id="support"
             type="radio"
@@ -78,30 +107,52 @@
             value="Support Request"
             aria-describedby="query-error"
           />
-          <label for="support">Support Request</label>
+          <label 
+            for="support"
+            class="text-preset-3"
+          >
+            Support Request
+          </label>
         </div>
-        <p id="query-error" class="error">Please select a query type Message</p>
+        <p id="query-error" class="error text-preset-4">Please select a query type Message</p>
       </fieldset>
-      <div>
-        <label for="message">Message <span>*</span></label>
+      <div class="input-fields">
+        <label 
+          for="message"
+          class="text-preset-4"
+        > Message 
+        <span>*</span>
+      </label>
         <textarea 
           id="message"
           name="message"
+          class="text-preset-3"
           aria-describedby="message-error"
         ></textarea>
-        <p id="message-error" class="error">This field is required</p>
+        <p id="message-error" class="error text-preset-4">This field is required</p>
       </div>
-      <div>
+      <div class="check-field">
         <input 
           type="checkbox" 
           id="accept" 
           name="accept" 
           aria-describedby="accept-error"
         />
-        <label for="accept">I consent to being contacted by the team <span>*</span></label>
-        <p id="accept-error" class="error">To submit this form, please consent to being contacted</p>
+        <label 
+          for="accept"
+          class="text-preset-4"
+        >
+          I consent to being contacted by the team 
+          <span>*</span>
+        </label>
       </div>
-      <button type="submit">Submit</button>
-    </forn>
+      <p id="accept-error" class="error text-preset-4">To submit this form, please consent to being contacted</p>
+      <button 
+        type="submit"
+        class="text-preset-2"
+      >
+        Submit
+      </button>
+    </form>
   </body>
 </html>
