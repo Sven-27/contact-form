@@ -24,7 +24,7 @@
     </div>
     <form>
       <h1 class="text-preset-1">Contact Us</h1>
-      <div class="input-fields">
+      <div class="input-fields name-container-1">
         <label
            for="firstname"
            class="text-preset-4"
@@ -43,7 +43,7 @@
         />
       <p id="firstname-error" class="error text-preset-4">This field is required</p>
       </div>
-      <div class="input-fields">
+      <div class="input-fields name-container-2">
         <label 
           for="lastname"
           class="text-preset-4"
@@ -72,12 +72,13 @@
         </label>
         <input
           id="email"
-          type="text"
+          type="email"
           name="email"
-          class="personal-info text-preset-3"
+          class="personal-info text-preset-3 input-email"
           aria-describedby="email-error"
           required
           aria-required="true"
+          autocomplete="true"
         />
         <p id="email-error" class="error text-preset-4">Please enter a valid email address</p>
       </div>
@@ -87,9 +88,9 @@
           <input
             id="general"
             type="radio"
-            name="general"
+            name="query-type"
             value="General Enquiry"
-            checked
+            
             aria-describedby="query-error"
           />
           <label 
@@ -103,7 +104,7 @@
           <input
             id="support"
             type="radio"
-            name="support"
+            name="query-type"
             value="Support Request"
             aria-describedby="query-error"
           />
@@ -154,5 +155,6 @@
         Submit
       </button>
     </form>
+    <script src="./script.js"></script>
   </body>
 </html>
